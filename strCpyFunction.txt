@@ -1,3 +1,23 @@
+#include  <string,h>
+#include  <stdio.h>
+#include  <stdlib.h>
+//#define  N  ( 10)
 //实现字符串拷贝函数
-char* StrCpy(char* src){
+int  main()
+{
+strCpy("asvc");
+}
+char* strCpy(char* src)
+{
+        char  *p1  =  *src;
+        //char  *p2  =  ( char  *)malloc( sizeof( char)  *  N);
+        char  *p2  =  ( char  *)malloc( sizeof( char) +1);
+        char  *p3  =  ( char  *)memcpy(p2,  p1,  N);
+        printf( "p2 = %s\np3 = %s\n",  p2,  p3);
+
+        free(p2);
+        p2  =  NULL;
+        p3  =  NULL;
+        system( "pause");
+        return;
 }
