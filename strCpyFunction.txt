@@ -1,0 +1,3 @@
+//实现字符串拷贝函数
+char* StrCpy(char* src){
+}
